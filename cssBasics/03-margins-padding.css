@@ -1,0 +1,64 @@
+.title {
+    text-align: center;
+}
+
+.container {
+    border: 2px solid blue;
+    /*Each margin side need set*/
+    margin-top: 50px;
+    margin-right: 250px;
+    margin-bottom: 200px;
+    margin-left: 200px;
+
+    /*Can also be set by using...*/
+    /* margin: 50px 250px 200px 200px; */
+
+    /* padding: top right bottom left; */
+    padding: 20px 20px 20px 40px;
+}
+
+p {
+    height: 40px;
+    background-color: blue;
+    color: white;
+
+    /* This syntax is also shorthand and replaces the following: */
+    /*
+        border-width: 5px;
+        border-style: solid;
+        border-color: pink;
+    */
+    border: 5px solid pink;
+}
+
+/*The same styling can be applied to different selectors by seperating them with a comma */
+#margin-experiment-1, #margin-experiment-2 {
+    /* If all values of a margin are the same, you can apply that one value to the entire margin */
+    /* 0 is a consistent value so you do not need to assign it a unit */
+    margin: 0;
+}
+
+/*We are setting all four sides of the padding to 10 px*/
+.margin-experiment-3 {
+    margin: 5px 10px 20px 0;
+    padding: 10px;
+}
+
+.padded-container {
+    border: 2px solid red;
+    margin: 50px;
+    padding: 20px 20px 20px 40px;
+}
+
+#padding-experiment-1 {
+    border: 2px solid yellow;
+    margin: 50px;
+    padding: 20px;
+}
+
+#padding-experiment-2 {
+    border: 4px dotted black;
+    margin: 0px 50px 50px 50px;
+    text-align: center;
+    padding-top: 25px;
+}
